@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2A9-Wg-1AE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Passcode-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="passcode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PIN fill" translatesAutoresizingMaskIntoConstraints="NO" id="v4E-RX-cNs">
+                                <rect key="frame" x="10" y="89" width="355" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="MfX-AG-jte"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tGe-RM-5ZF">
+                                <rect key="frame" x="10" y="134" width="355" height="453"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xQI-dX-aLQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="113.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymi-Iy-vrg" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="113.5"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rm-XM-fw0" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="118.5" y="0.0" width="118" height="113.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uP6-Ok-S9C" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="236.5" y="0.0" width="118.5" height="113.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rDF-Vh-LuT">
+                                        <rect key="frame" x="0.0" y="113.5" width="355" height="113"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yis-cJ-qIf" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="113"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUk-Ur-Cjn" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="118.5" y="0.0" width="118" height="113"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7O-qc-e2N" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="236.5" y="0.0" width="118.5" height="113"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iAZ-sm-kn9">
+                                        <rect key="frame" x="0.0" y="226.5" width="355" height="113.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-gh-irK" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="113.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEP-B3-ZtH" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="118.5" y="0.0" width="118" height="113.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFp-cv-eAZ" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="236.5" y="0.0" width="118.5" height="113.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="iyU-Mx-AFO">
+                                        <rect key="frame" x="0.0" y="340" width="355" height="113"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPc-Qx-KjN" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="113"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT6-hx-wOh" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="118.5" y="0.0" width="118" height="113"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2x-Wm-IDX" customClass="AppButton" customModule="passcode" customModuleProvider="target">
+                                                <rect key="frame" x="236.5" y="0.0" width="118.5" height="113"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <state key="normal" title="←">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IvG-QH-mdL">
+                                <rect key="frame" x="10" y="617" width="355" height="50"/>
+                                <color key="backgroundColor" red="0.38543822350000001" green="1" blue="0.30067102340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Sbx-Hf-46y"/>
+                                </constraints>
+                                <state key="normal" image="next ico"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IvG-QH-mdL" firstAttribute="top" secondItem="tGe-RM-5ZF" secondAttribute="bottom" constant="30" id="8CY-gk-dMU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IvG-QH-mdL" secondAttribute="bottom" id="Ax8-Xd-Fov"/>
+                            <constraint firstItem="v4E-RX-cNs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="PaR-g3-jnh"/>
+                            <constraint firstAttribute="trailing" secondItem="IvG-QH-mdL" secondAttribute="trailing" constant="10" id="Uht-IB-1tr"/>
+                            <constraint firstItem="tGe-RM-5ZF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="XY0-6A-t2n"/>
+                            <constraint firstItem="IvG-QH-mdL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="cjT-S6-Nbb"/>
+                            <constraint firstItem="IvG-QH-mdL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cv8-vk-jxJ"/>
+                            <constraint firstAttribute="trailing" secondItem="tGe-RM-5ZF" secondAttribute="trailing" constant="10" id="d0Z-ol-4ya"/>
+                            <constraint firstItem="v4E-RX-cNs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="g63-JX-CCX"/>
+                            <constraint firstAttribute="trailing" secondItem="v4E-RX-cNs" secondAttribute="trailing" constant="10" id="ucR-ad-gBc"/>
+                            <constraint firstItem="tGe-RM-5ZF" firstAttribute="top" secondItem="v4E-RX-cNs" secondAttribute="bottom" constant="30" id="vdG-XF-3tS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Passcode" id="1gm-1c-ljV">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="aAd-tY-JU8"/>
+                        <barButtonItem key="rightBarButtonItem" image="Help" id="SLn-th-xEC"/>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gDn-pa-cQb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2A9-Wg-1AE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N5w-cO-FVA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YgC-5s-gIT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLf-b2-k43" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Help" width="21" height="21"/>
+        <image name="PIN fill" width="242" height="33"/>
+        <image name="menu" width="19" height="13"/>
+        <image name="next ico" width="21" height="21"/>
+    </resources>
+</document>
